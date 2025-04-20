@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - poetry-core
     - pip
   run:
     - python >={{ python_min }}
@@ -24,7 +25,7 @@ requirements:
     - flupy
     - parse >=1.8.4
     - sqlalchemy >=1.4
-    - typing_extensions
+    - typing_extensions >=0.1.0
 
 test:
   imports:
